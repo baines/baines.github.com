@@ -1,0 +1,165 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Liberation Mono', Consolas, monospace;
+	font-size: 14px;
+}
+html {
+	background-color: #1B1825;
+}
+body, header {
+	max-width: 1000px;
+	min-width: 240px;
+	border: 2px solid #fff;
+}
+body {
+	max-width: 1004px;
+	margin: 3% auto;
+	padding: 2px;
+}
+header {
+	max-height: 128px;
+}
+header > a {
+	display: block;
+	text-align: center;
+	padding: 2% 0%;
+	color: #fff;
+}
+header > a:link {
+	color: #fff;
+}
+header > a > img {
+	color: #fff;
+	font-size: 300%;
+	width: 80%;
+	height: auto;
+}
+a:link {
+	color: #1B1825;
+}
+article {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcAQMAAABIw03XAAAABlBMVEUbGCX///8LtO7KAAAAR0lEQVQIHQXBMRHAIBAAsHAMjFQBGioAUR0ZX9pLeQlIaCJ5FQ9cB+hpAZMRYNMKXBzoiQUTRmBDK1xw6AkWExhhA61cCL4fXe4PtaJLCEAAAAAASUVORK5CYII=") repeat;
+	border: 2px solid #fff;
+	min-height: 340px;
+	text-align: center;
+	line-height: 100%;
+	margin-top: 2px;
+}
+.tiles > li {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+	border: 6px double #1B1825;
+	margin: 6% 4%;
+}
+.tiles > li > a {
+	display: block;
+	line-height: 200px;
+	width: 200px;
+	text-align: center;
+	font-size: 300%;
+	position: relative;
+}
+.tiles > li > a > span {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 200px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAADIAQMAAAAOUQ31AAAAAXNSR0IArs4c6QAAAAZQTFRFGxgl////C7TuygAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfcCwgUJQt/Qm3JAAABBElEQVRo3u3Y4Q2CMBCG4fOXPzuCo7iaozJCJ7D27lqKSTGimAi8J6mlkIeENJcvSFqvBAtr1hKrcFRreO8RWFhYu7buUiZRzlhYWFhHtcbCwsLCwhpWyqtYWFhYWFo3ufRvwlpmvVlYWFj/aX1bu7OinPQNB/20cV1g9foqFhbWZqxFmQmLjImFRS7E2rNFUb8t3WS+02ymRz1NvqYrfuoXQk4mOWHEkP+iTTSrYGF1rFRvnQziQLvqv7JmxHjkocyxsOastk2xsFa1rMd192qJetWqPbNByfqgN0bBwupZL3phWyujrX7WV7GObI1Zroa3kuWm1lOWa1YNdVhYHYuitlEPIOOhkxNoCGEAAAAASUVORK5CYII=") no-repeat 0 0;
+}
+.tiles > #games > a > span {
+	background-position: -200px 0px;
+}
+.tiles > #other > a > span {
+	background-position: -400px 0px;
+}
+div#about {
+	background-color: #fff;
+	border: 6px double #1B1825;
+	margin: 3%;
+	padding: 1% 10%;
+}
+p {
+	padding: 15px 0px;
+	line-height: 140%;
+}
+.games > li {
+	display: block;
+	margin: 3%;
+	border: 6px double #1B1825;
+	background-color: #fff;
+	padding: 0px;
+}
+.game {
+	text-align: center;
+	background-color: #fff;
+	overflow: hidden;
+	min-height: 120px;
+}
+.game > img {
+	float: left;
+	margin-right: 4%;
+	width: 40%;
+	max-width: 200px;
+}
+.game > p {
+	padding: 1% 5%;
+	word-break: break-word;
+	hyphens: auto;
+	-moz-hyphens: auto;
+}
+.game > h1 {
+	padding-right: 4%;
+	margin: 5px 0px;
+}
+.game.alt > img {
+	float: right;
+	margin-right: 0px;
+	margin-left: 4%;
+	width: 40%;
+	max-width: 200px;
+}
+.download {
+	border-top: 2px solid #fff;
+	text-align: left;
+	color: #fff;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #1B1825;
+}
+.stats {
+	padding-right: 4%;
+	padding-top: 10px;
+	list-style: square;
+}
+.stats > li, .download > li {
+	display: inline-block;
+	min-width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+.download > li {
+	text-align: left;
+	margin-right: 30px;
+	min-width: 0px;
+}
+.download > li > a:link, .download > li > b > a {
+	color: #fff;
+}
+.stats > li > abbr {
+	cursor: help;
+	border-bottom: 1px dotted #000;
+}
+h1 {
+	padding: 10px 0px;
+	text-decoration: underline;
+	font-size: 120%;
+	line-height: 120%;
+}
