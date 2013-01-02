@@ -147,8 +147,8 @@ p {
 }
 .download > li {
 	text-align: left;
-	margin-right: 30px;
-	min-width: 0px;
+	margin-right: 3%;
+	min-width: 80px;
 }
 .download > li > a:link, .download > li > b > a {
 	color: #fff;
