@@ -14,7 +14,7 @@ body, header {
 }
 body {
 	max-width: 1004px;
-	margin: 3% auto;
+	margin: 0px auto;
 	padding: 2px;
 }
 header {
@@ -163,3 +163,38 @@ h1 {
 	font-size: 120%;
 	line-height: 120%;
 }
+#ribbon a {
+	color: #1B1825;
+	background-color: #fff;
+	border: 6px double #1B1825;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	line-height: 150%;
+	padding-top: 2px;
+	text-decoration: none;
+	margin: -2px -2px 0px -2px;
+}
+@media screen and (min-width: 1000px) {
+	html {
+		padding: 0px 3%;
+	}
+	body {
+		margin: 3% auto;
+	}
+	#ribbon {
+		width: 180px;
+		height: 180px;
+		overflow: hidden;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	#ribbon a {
+		width: 220px;
+		margin-top: 50px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}
+
