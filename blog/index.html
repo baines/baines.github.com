@@ -1,0 +1,13 @@
+---
+title: Blog index
+layout: main
+---
+<h1 id="blogindex">Blog Index</h1>
+<ul id="posts">
+{% for post in site.posts %}
+	<li>
+		<span>{{ post.date | date: "%d-%b-%Y" }}</span>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+</ul>

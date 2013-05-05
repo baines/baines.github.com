@@ -163,6 +163,81 @@ h1 {
 	font-size: 120%;
 	line-height: 120%;
 }
+
+span.date {
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid #fff;
+	border-bottom: 2px dotted #fff;
+	background-color: #1B1825;
+	width: 100px;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	top: 4px;
+	left: 2px;
+}
+
+div.post {
+	text-align: left;
+	margin: 3%;
+}
+
+div.post div {
+	background-color: #fff;
+	border: 6px double #1B1825;
+}
+
+div.post div h1 {
+	display: block;
+	color: #fff;
+	background-color: #1B1825;
+	font-size: 150%;
+	border-bottom: 6px double #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+div.post div p {
+	padding: 10px 20px;
+}
+
+h1#blogindex {
+	display: block;
+	margin: 1% 3%;
+	background-color: #1B1825;
+	color: #fff;
+	border: 6px double #fff;
+	text-decoration: none;
+	font-size: 150%;
+}
+
+ul#posts {
+	display: block;
+	margin: 1% 3%;
+	background-color: #1B1825;
+	color: #fff;
+	border: 2px solid #fff;
+	text-decoration: none;
+	font-size: 150%;
+}
+
+ul#posts li {
+	text-align: left;
+	display: block;
+	background-color: #fff;
+	border: 6px double #1B1825;
+	margin: 5px;
+}
+
+ul#posts li span {
+	display: inline-block;
+	padding: 2px 5px;
+	font-weight: bold;
+	background-color: #1B1825;
+}
+
 #ribbon a {
 	color: #1B1825;
 	background-color: #fff;
