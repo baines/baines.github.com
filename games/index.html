@@ -3,72 +3,10 @@ title: Games
 layout: main
 ---
 <ul class="games">
+{% for page in site.categories.games %}
 <li>
-	<div class="game">
-		<img src="/img/coc.png" alt="[Screenshot]"/>
-		<h1>Castle of Cowardice</h1>
-		<p>This 48 hour competition entry is based on the theme "Cowardice", and as
-		   such you have one simple goal: run from anything that resembles an enemy!
-		   If you can survive for long enough, the door to the next chamber will open
-		   and you can continue to flee for your life.</p>
-		<ul class="stats">
-			<li><abbr title="Programming language used">C++</abbr></li>
-			<li><abbr title="Year created">2011</abbr></li>
-			<li><abbr title="Time to create">48h</abbr></li>
-		</ul>
-	</div>
-	<ul class="download">
-		<li><b>Download:</b></li>
-		<li><a href="http://s3.abaines.me.uk/coward-1.0-linux-x86.tar.gz">Linux x86</a></li>
-		<li><a href="http://s3.abaines.me.uk/coward-1.0-linux-x64.tar.gz">Linux x64</a></li>
-		<li><a href="http://s3.abaines.me.uk/coward-1.0-windows-x86.zip">Windows x86</a></li>
-		<li><a href="/games/checksums.txt">Checksums</a></li>
-		<li><b><a href="https://www.github.com/baines/coward">View source on Github!</a></b></li>
-	</ul>
+{% assign CONTENT = page.content %}
+{% include game_inc.html %}
 </li>
-<li>
-	<div class="game alt">
-		<img src="/img/inv.png" alt="[Screenshot]"/>
-		<h1>Invader from space</h1>
-		<p>Invader from space was made for a 2 week "retro with a twist" competition
-		   in 2011. Differing from a certain other game, you are tasked with shooting
-		   down only a single invading alien, but that might be harder than it sounds.</p>
-		<ul class="stats">
-			<li><abbr title="Programming language used">C++</abbr></li>
-			<li><abbr title="Year created">2011</abbr></li>
-			<li><abbr title="Time to create">2 weeks</abbr></li>
-		</ul>
-	</div>
-	<ul class="download">
-		<li><b>Download:</b></li>
-		<li><a href="http://s3.abaines.me.uk/invader-1.0-linux-x86.tar.gz">Linux x86</a></li>
-		<li><a href="http://s3.abaines.me.uk/invader-1.0-linux-x64.tar.gz">Linux x64</a></li>
-		<li><a href="http://s3.abaines.me.uk/invader-1.0-windows-x86.zip">Windows x86</a></li>
-		<li><a href="/games/checksums.txt">Checksums</a></li>
-		<li><b><a href="https://www.github.com/baines/invader">View source on Github!</a></b></li>
-	</ul>
-</li>
-<li>
-	<div class="game">
-		<img src="/img/vs.png" alt="[Screenshot]"/>
-		<h1>Vector Space</h1>
-		<p>Made for a week long WGD competition with the theme "Dimension",
-		   Vector space places you in a situation that will be all too
-		   familiar if you've played "Asteroids", only this time there are 4
-		   separate dimensions of them to deal with.</p>
-		<ul class="stats">
-			<li><abbr title="Programming language used">C++</abbr></li>
-			<li><abbr title="Year created">2010</abbr></li>
-			<li><abbr title="Time to create">1 week</abbr></li>
-		</ul>
-	</div>
-	<ul class="download">
-		<li><b>Download:</b></li>
-		<li><a href="http://s3.abaines.me.uk/vspace-0.1-linux-x86.tar.gz">Linux x86</a></li>
-		<li><a href="http://s3.abaines.me.uk/vspace-0.1-linux-x64.tar.gz">Linux x64</a></li>
-		<li><a href="http://s3.abaines.me.uk/vspace-0.1-windows-x86.zip">Windows x86</a></li>
-		<li><a href="/games/checksums.txt">Checksums</a></li>
-		<li><b><a href="https://www.github.com/baines/vspace">View source on Github!</a></b></li>
-	</ul>
-</li>
+{% endfor %}
 </ul>

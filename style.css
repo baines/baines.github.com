@@ -113,9 +113,17 @@ p {
 	hyphens: auto;
 	-moz-hyphens: auto;
 }
-.game > h1 {
+.game a {
+	display: block;
+	font-weight: bold;
+	font-size: 125%;
+	line-height: 125%;
 	padding-right: 4%;
-	margin: 5px 0px;
+	margin: 10px 0px;
+}
+.game.alt a {
+	padding-left: 4%;
+	padding-right: 0px;
 }
 .game.alt > img {
 	float: right;

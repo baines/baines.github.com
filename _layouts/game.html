@@ -1,0 +1,10 @@
+---
+layout: main
+permalink: /game/:title
+---
+<ul class="games">
+<li>
+{% assign CONTENT = content %}
+{% include game_inc.html %}
+</li>
+</ul>
