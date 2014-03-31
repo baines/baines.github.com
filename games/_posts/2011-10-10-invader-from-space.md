@@ -1,5 +1,6 @@
 ---
-layout: game
+layout: templated
+template: game_inc
 title: Invader from Space
 lang: C++
 year: 2011

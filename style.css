@@ -88,12 +88,15 @@ p {
 	padding: 15px 0px;
 	line-height: 140%;
 }
-.games > li {
+.items > li {
 	display: block;
 	margin: 3%;
 	border: 6px double #1B1825;
 	background-color: #fff;
 	padding: 0px;
+}
+.items > li > p {
+	margin: 0px 4%;
 }
 .game {
 	text-align: center;
@@ -113,17 +116,18 @@ p {
 	hyphens: auto;
 	-moz-hyphens: auto;
 }
-.game a {
+.items > li > a, .game a {
 	display: block;
 	font-weight: bold;
 	font-size: 125%;
 	line-height: 125%;
-	padding-right: 4%;
 	margin: 10px 0px;
+}
+.game a {
+	padding-right: 4%;
 }
 .game.alt a {
 	padding-left: 4%;
-	padding-right: 0px;
 }
 .game.alt > img {
 	float: right;
@@ -171,7 +175,6 @@ h1 {
 	font-size: 120%;
 	line-height: 120%;
 }
-
 span.date {
 	display: block;
 	text-align: center;
@@ -211,14 +214,18 @@ div.post div p {
 	padding: 10px 20px;
 }
 
-h1#blogindex {
-	display: block;
-	margin: 1% 3%;
+h2 {
+	display: inline-block;
+	width: 80%;
+	max-width: 600px;
+	margin: 1% 3% -3% 3%;
+	padding: 5px 5px;
 	background-color: #1B1825;
 	color: #fff;
 	border: 6px double #fff;
 	text-decoration: none;
 	font-size: 150%;
+	line-height: 150%;
 }
 
 ul#posts {

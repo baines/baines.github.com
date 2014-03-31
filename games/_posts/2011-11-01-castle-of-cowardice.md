@@ -1,5 +1,6 @@
 ---
-layout: game
+layout: templated
+template: game_inc
 title: Castle of Cowardice
 lang: C++
 year: 2011

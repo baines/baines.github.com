@@ -1,7 +1,13 @@
 ---
-title: Other
+title: Other Projects
 layout: main
 ---
-<div id="about">
-<p>There's nothing here yet, sorry!</p>
+<h2>Other Projects</h2>
+<ul class="items">
+{% for page in site.categories.other %}
+<li>
+{% assign CONTENT = page.content %}
+{% include {{page.template}} %}
+</li>
+{% endfor %}
 </div>

@@ -1,0 +1,10 @@
+<a href="{{ page.url }}">{{ page.title }}</a>
+{{ CONTENT }}
+{% if page.links %}
+	<ul class="download">
+		<li><b>Download:</b></li>
+		{% for d in page.links %}
+			<li><a href="http://s3.abaines.me.uk/{{ d.url }}">{{ d.text }}</a></li>
+		{% endfor %}
+	</ul>
+{% endif %}

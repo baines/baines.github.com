@@ -2,11 +2,12 @@
 title: Games
 layout: main
 ---
-<ul class="games">
+<h2>Games</h2>
+<ul class="items">
 {% for page in site.categories.games %}
 <li>
 {% assign CONTENT = page.content %}
-{% include game_inc.html %}
+{% include game_inc %}
 </li>
 {% endfor %}
 </ul>
