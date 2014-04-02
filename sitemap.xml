@@ -21,4 +21,19 @@
 	<loc>http://abaines.me.uk/other/</loc>
 	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
 </url>
+{% for p in site.categories.games %}
+<url>
+	<loc>{{ site.url }}{{ p.url }}</loc>
+	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+	<image:image>
+		<image:loc>{{ site.url }}/img/{{ p.repo }}.png</image:loc>
+	</image:image>
+</url>
+{% endfor %}
+{% for p in site.categories.other %}
+<url>
+	<loc>{{ site.url }}{{ p.url }}</loc>
+	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+</url>
+{% endfor %}
 </urlset>
