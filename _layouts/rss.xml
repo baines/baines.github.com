@@ -1,0 +1,28 @@
+---
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>Alex Baines - {{ page.title }}</title>
+		<link>{{ site.url }}{{ i.url }}</link>
+		<description>{{ page.content }}</description>
+		<language>en-gb</language>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<copyright>{{ site.time | date: '%Y' }} Alex Baines</copyright>
+		{% for i in site.categories.[page.category] %}
+		<item>
+			<title>{{ i.title }}</title>
+			<link>{{ site.url }}{{ i.url }}</link>
+			<description>{{ i.content | xml_escape }}</description>
+{% if i.repo %}
+			<media:content url="{{ site.url }}/img/{{ i.repo }}.png" medium="image" type="image/png">
+				<media:thumbnail url="{{ site.url }}/img/{{ i.repo }}.png" width="200" height="200" />
+			</media:content>
+{% endif %}
+			<pubDate>{{ i.date | date_to_rfc822 }}</pubDate>
+			<guid>{{ i.id }}</guid>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>
+	

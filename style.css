@@ -224,6 +224,7 @@ h2 {
 	color: #fff;
 	border: 6px double #fff;
 	text-decoration: none;
+	text-indent: 25px;
 	font-size: 150%;
 	line-height: 150%;
 }
@@ -265,6 +266,21 @@ ul#posts li span {
 	text-decoration: none;
 	margin: -2px -2px 0px -2px;
 }
+
+a.rss {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 2px;
+	width: 28px;
+	height: 28px;
+	background-image: url('/img/feed-icon-28x28.png');
+}
+
+a.rss span {
+	display: none;
+}
+
 @media screen and (min-width: 1000px) {
 	html {
 		padding: 0px 3%;
