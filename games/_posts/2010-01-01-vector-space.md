@@ -12,3 +12,5 @@ Made for a week long WGD competition with the theme "Dimension",
 Vector space places you in a situation that will be all too
 familiar if you've played "Asteroids", only this time there are 4
 separate dimensions of them to deal with.
+
+*[WGD]: Warwick Game Design
