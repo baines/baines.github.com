@@ -4,6 +4,10 @@ md5:
 e3bf6c0b4e86e61e41e2d3a38cd7d7c2  coward-1.0-linux-x86.tar.gz
 97b71d9e095be15bd78a79091b4b9c52  coward-1.0-windows-x86.zip
 
+e38b45cc24e58dbc1201b05e90a2cf23  coward-1.1-linux-x64.tar.gz
+590f4190e06410fba71914758e97d515  coward-1.1-linux-x86.tar.gz
+785659bcd1214966082683f38f5ebc9b  coward-1.1-windows-x86.zip
+
 5c995e0cf4d24327df46dbfc2a9c66ce  invader-1.0-linux-x64.tar.gz
 3cd3d406a9b85e27359d354598b764d9  invader-1.0-linux-x86.tar.gz
 eb5cf9fa3d5bf3ddb3d94462fcf654e1  invader-1.0-windows-x86.zip
@@ -17,6 +21,10 @@ sha256:
 f768cf6ab1956bd666f1da444df451f7da6da565e0e6c42a2e30fbcf6930429b  coward-1.0-linux-x64.tar.gz
 81adf83bb0d8b9da8cb1426cafe07de83a8a3beb6eaa242edae4e16906f79b91  coward-1.0-linux-x86.tar.gz
 f0f10b305fbcfa6f4287f97993fa6a14dac8f1e4761dea86d82e411eb0bd4fa6  coward-1.0-windows-x86.zip
+
+9c445b4dcbb11caf203d19d2fd1cf5fbe24f8c9e0e15f3380c237a3c2bd6b07d  coward-1.1-linux-x64.tar.gz
+9b010f604ecf63edece76e214511a083a2f72cc7186964928afc2e56e7422444  coward-1.1-linux-x86.tar.gz
+2cb011d2c5c19e55ce685c30f33e659085ff05fe2edd5550510193fea5121f00  coward-1.1-windows-x86.zip
 
 fc67b2736f74fd9b86d2b096bd044e53772fb33357e3c084acafb508e9b4df7d  invader-1.0-linux-x64.tar.gz
 53ff8a68cd440c5d8efa901ade4841d556ad6da9591d95ebe5f38015ef0621d7  invader-1.0-linux-x86.tar.gz

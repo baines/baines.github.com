@@ -6,7 +6,7 @@ lang: C++
 year: 2011
 time: 48h
 repo: coward
-version: 1.0
+version: 1.1
 ---
 This 48 hour competition entry is based on the theme "Cowardice", and as
 such you have one simple goal: run from anything that resembles an enemy!
