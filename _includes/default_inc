@@ -6,7 +6,11 @@
 	<ul class="download">
 		<li><b>Links:</b></li>
 		{% for d in page.links %}
+			{% if d.url contains "http" %}
+			<li><a href="{{ d.url }}">{{ d.text }}</a></li>
+			{% else %}
 			<li><a href="http://s3.abaines.me.uk/{{ d.url }}">{{ d.text }}</a></li>
+			{% endif %}
 		{% endfor %}
 	</ul>
 {% endif %}
