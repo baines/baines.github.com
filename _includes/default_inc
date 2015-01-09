@@ -1,10 +1,13 @@
+<span class="date">{{ page.date | date: "%d-%b-%Y" }}</span>
+<div>
 <a href="{{ page.url }}">{{ page.title }}</a>
 {{ CONTENT }}
 {% if page.links %}
 	<ul class="download">
-		<li><b>Download:</b></li>
+		<li><b>Links:</b></li>
 		{% for d in page.links %}
 			<li><a href="http://s3.abaines.me.uk/{{ d.url }}">{{ d.text }}</a></li>
 		{% endfor %}
 	</ul>
 {% endif %}
+</div>
