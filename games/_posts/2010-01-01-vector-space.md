@@ -1,6 +1,6 @@
 ---
 layout: templated
-template: game_inc
+template: game.htm
 title: Vector Space
 lang: C++
 year: 2010

@@ -1,6 +1,6 @@
 ---
 layout: templated
-template: default_inc
+template: default.htm
 title: Audacious bass spectrum
 links: [ {text: "Available on GitHub here",
           url:  "https://github.com/baines/audacious-bass-spectrum" }]

@@ -1,6 +1,6 @@
 ---
 layout: templated
-template: embed_inc
+template: embed.htm
 title: Messing with LMMS
 embedsrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95693478&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true
 ---

@@ -1,14 +1,6 @@
 ---
 title: Games
-layout: main
+cat: games
+layout: index
 desc: Here is a list of various open source games that I've programmed for small (often 48h) competitions. They're pretty bad, don't expect much...
 ---
-<h2>Games<a class="rss" href="./rss" title="RSS Feed"><span> RSS Feed </span></a></h2>
-<ul class="items">
-{% for page in site.categories.games %}
-<li>
-{% assign CONTENT = page.content %}
-{% include game_inc %}
-</li>
-{% endfor %}
-</ul>

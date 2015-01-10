@@ -1,11 +1,7 @@
 ---
 layout: main
 ---
-{% if page.template == 'game_inc' %}
-<ul class="items">
-{% else %}
-<ul id="posts">
-{% endif %}
+<ul id="posts" class="{{ page.categories }}">
 <li>
 {% assign CONTENT = content %}
 {% include {{page.template}} %}
