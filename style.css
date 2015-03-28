@@ -7,25 +7,25 @@
 	font-size: 14px;
 }
 
-html, h2, .download, .download a:link, .date, 
-.post > a, #about > h1, header > a:link {
-	background-color: #1B1825;
-	color: #fff;
-}
-
-a:link, #ribbon a, .tiles > li, #about, .post, .games > li {
+a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
 	background-color: #fff;
 	color: #1B1825;
 }
 
+html, h2, h2 > a:link, .download, .download a:link, .date, 
+.post > a, #about > h1, header > a:link, .web-game > li, .web-game > li > a:link {
+	background-color: #1B1825;
+	color: #fff;
+}
+
 body, header {
-	max-width: 1000px;
-	min-width: 240px;
+	max-width: 970px;
+	min-width: 360px;
 	border: 2px solid #fff;
 }
 
 body {
-	max-width: 1004px;
+	max-width: 974px;
 	margin: 0px auto;
 	padding: 2px;
 }
@@ -35,7 +35,7 @@ header {
 }
 
 p {
-	padding: 15px 20px;
+	padding: 15px 20px 5px 20px;
 	line-height: 140%;
 	word-break: break-word;
 	hyphens: auto;
@@ -61,26 +61,60 @@ h1 {
 h2 {
 	display: inline-block;
 	width: 80%;
-	max-width: 600px;
+	max-width: 500px;
 	margin: 1% 3% -3% 3%;
-	padding: 5px 5px;
+	padding: 4px 4px;
 	border: 6px double #fff;
 	text-decoration: none;
 	text-indent: 25px;
-	font-size: 150%;
+	font-size: 125%;
 	line-height: 150%;
 }
 
 header > a {
 	display: block;
+	width: 100%;
 	text-align: center;
 	padding: 2% 0%;
 }
 
 header > a > img {
 	font-size: 300%;
-	width: 80%;
+	width: 60%;
 	height: auto;
+	image-rendering: optimizeSpeed;
+	image-rendering: pixelated;
+	image-rendering: -ms-interpolation-mode:nearest-neighbor;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
+#info {
+	display: inline-block;
+	width: 20%;
+	max-width: 140px;
+	height: auto;
+	border-left: 2px solid #fff;
+	padding: 5px;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	padding: 0px;
+	margin: 2px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	min-width: 70px;
+	width: 15%;
+	font-weight: bold;
+	margin: 0px -1px;
+	border-left: 2px solid #1B1825;
+	border-right: 2px solid #1B1825;
 }
 
 article {
@@ -89,7 +123,6 @@ article {
 	min-height: 340px;
 	text-align: center;
 	line-height: 100%;
-	margin-top: 2px;
 }
 
 #ribbon a {
@@ -106,10 +139,10 @@ article {
 a.rss {
 	display: inline-block;
 	float: right;
-	position: relative;
-	top: 2px;
 	width: 28px;
 	height: 28px;
+	background-color: transparent;
+	color: #fff;
 	background-image: url('/img/feed-icon-28x28.png');
 }
 
@@ -131,22 +164,34 @@ a.rss span {
 
 /* Homepage stuff */
 
+.tiles {
+	display: block;
+	width: 15%;
+	max-width: 112px;
+	float: left;
+	margin-left: 4%;
+}
+
 .tiles > li {
-	display: inline-block;
+	display: block;
 	vertical-align: middle;
-	width: 200px;
-	height: 200px;
+	line-height: 100%;
+	max-width: 100px;
+	width: 100%;
 	border: 6px double #1B1825;
-	margin: 6% 4%;
+	margin: 25% 0;
+	overflow: hidden;
 }
 
 .tiles > li > a {
 	display: block;
-	line-height: 200px;
-	width: 200px;
+	line-height: 100%;
 	text-align: center;
-	font-size: 300%;
+	width: 100%;
+	height: 100%;
 	position: relative;
+	height: 0;
+	padding-bottom: 100%;
 }
 
 .tiles > li > a > span {
@@ -154,24 +199,45 @@ a.rss span {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 200px;
-	height: 200px;
-	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAADIAQMAAAAOUQ31AAAAAXNSR0IArs4c6QAAAAZQTFRFGxgl////C7TuygAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfcCwgUJQt/Qm3JAAABBElEQVRo3u3Y4Q2CMBCG4fOXPzuCo7iaozJCJ7D27lqKSTGimAi8J6mlkIeENJcvSFqvBAtr1hKrcFRreO8RWFhYu7buUiZRzlhYWFhHtcbCwsLCwhpWyqtYWFhYWFo3ufRvwlpmvVlYWFj/aX1bu7OinPQNB/20cV1g9foqFhbWZqxFmQmLjImFRS7E2rNFUb8t3WS+02ymRz1NvqYrfuoXQk4mOWHEkP+iTTSrYGF1rFRvnQziQLvqv7JmxHjkocyxsOastk2xsFa1rMd192qJetWqPbNByfqgN0bBwupZL3phWyujrX7WV7GObI1Zroa3kuWm1lOWa1YNdVhYHYuitlEPIOOhkxNoCGEAAAAASUVORK5CYII=") no-repeat 0 0;
+	width: 100%;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAADIAQMAAAAOUQ31AAAAAXNSR0IArs4c6QAAAAZQTFRFGxgl////C7TuygAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfcCwgUJQt/Qm3JAAAA/klEQVRo3u3WwY3CMBSE4eG0x1cCpdAapVLCq4DZg+04SA4ibJCW5J+gKDjWl4v1NPJ2ERbWoiVJUhzVur32CSwsrF1bd9WH1A8WFhbWUa0pWFhYWFi3jfoqFhYWFpZtX3Ueb8JaZ70YLCys/2n9NbuzUif7qvBduqywRnMVCwvra6xVnQmLjomFRS/E2rNFyGdjS+Wk2ZIlT39d1mTVPeVFOBV2Rioy7Aw7sbBGltvW2U0F6G/LVdci57/ItoKFtWT1Y4qFtallL53VWvWa1WZmh2xnG4zCwhpZT2ZhX6t3ye/OVawjW1OXa+Wtdrm59dDlutVKHRbWwCLkO/ILIOOhkw6uLNkAAAAASUVORK5CYII=") no-repeat 0 0;
+	background-size: 300%;
+	height: 0;
+	padding-bottom: 100%;
 }
 
 .tiles > #games > a > span {
-	background-position: -200px 0px;
+	background-position: 50% 0px;
 }
 
 .tiles > #other > a > span {
-	background-position: -400px 0px;
+	background-position: 100% 0px;
+}
+
+.tiles > #gh > a {
+	background-image: url("/img/GitHub-Mark-120px-plus.png");
+	background-size: 100%;
+}
+
+#contact {
+	font-weight: bold;
+}
+
+#contact > span {
+	display: block;
+	font-size: 75%;
+	line-height: 180%;
+}
+
+#contact > span:nth-of-type(odd) {
+	color: #fff;
+	background-color: #1B1825;
 }
 
 /* About stuff */
 
-#about {
+div#about {
 	border: 6px double #1B1825;
-	margin: 3%;
 }
 
 /* Games stuff */
@@ -182,30 +248,33 @@ a.rss span {
 	min-height: 120px;
 }
 
-.game > img {
+.games > li {
+	display: block;
+	border: 6px double #1B1825;
+}
+
+.game > a > img {
 	float: left;
-	margin-right: 4%;
+	margin-right: 3%;
 	width: 40%;
 	max-width: 200px;
 }
 
-.game > a {
-	display: block;
+.game > a > span {
 	font-weight: bold;
 	font-size: 125%;
-	line-height: 125%;
-	margin: 10px 0px;
-	padding-right: 4%;
+	line-height: 250%;
+	margin-right: 3%;
 }
 
-.game.alt > a {
-	padding-left: 4%;
+.game.alt > a > span {
+	margin-right: -1%;
 }
 
-.game.alt > img {
+.game.alt > a > img {
 	float: right;
 	margin-right: 0px;
-	margin-left: 4%;
+	margin-left: 3%;
 }
 
 .download {
@@ -215,7 +284,7 @@ a.rss span {
 }
 
 .stats {
-	padding-right: 4%;
+	padding-right: 5%;
 	padding-top: 10px;
 	list-style: square;
 }
@@ -234,6 +303,25 @@ a.rss span {
 	min-width: 80px;
 }
 
+#webgame {
+	display: block;
+	margin: 2% 15% 5px 15%;
+	height: 360px;
+	max-height: 360px;
+}
+
+.web-game > li {
+	border: 6px double #fff;
+}
+
+.web-game > li > a {
+	display: block;
+	text-align: center;
+	font-size: 75%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
 /* Other posts stuff */
 
 .date {
@@ -249,14 +337,13 @@ a.rss span {
 	left: 2px;
 }
 
-#posts > li, #about {
+#posts > li, div#about {
 	text-align: left;
 	margin: 3%;
 }
 
-.post, .games > li {
-	background-color: #fff;
-	color: #1B1825;
+.post {
+	display: block;
 	border: 6px double #1B1825;
 }
 
@@ -278,9 +365,18 @@ a.rss span {
 	list-style-type: square;
 }
 
+#posts.homepage {
+	display: inline-block;
+	width: 80%;
+}
+
+#posts.homepage > h2 {
+	margin: 0 3% 3% 3%;
+}
+
 /* Adjust the ribbon and stuff for small screens */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 920px) {
 	html {
 		padding: 0px 3%;
 	}

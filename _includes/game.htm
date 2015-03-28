@@ -1,6 +1,16 @@
+{% if page.webgame and INDEX == false %}
+	<div id="webgame"></div>
+	{% if page.webgame.lib  %}<script src="{{ page.webgame.lib }}"></script>{% endif %}
+    {% if page.webgame.init %}<script>{{ page.webgame.init }}</script>{% endif %}
+	{% for l in page.webgame.links %}
+		<a href="{{ l.url }}">{{ l.text }}</a>
+	{% endfor %}
+{% else %}
 <div class="{% cycle 'game','game alt' %}">
-	<img src="/img/{{ page.repo }}.png" alt="[Screenshot]"/>
-	<a href="{{ page.url }}">{{ page.title }}</a>
+	<a href="{{ page.url }}">
+		<img src="/img/{{ page.repo }}.png" alt="[Screenshot]"/>
+		<span>{{ page.title }}</span>
+	</a>
 {{ CONTENT }}
 	<ul class="stats">
 		<li><abbr title="Programming language used">{{ page.lang }}</abbr></li>
@@ -8,12 +18,17 @@
 		<li><abbr title="Time to create">{{ page.time }}</abbr></li>
 	</ul>
 </div>
+
 <ul class="download">
-	<li><b>Download:</b></li>
+{% if page.webgame %}
+	<li><strong><a href="{{ page.url }}">Play Online! [HTML5]</a></strong></li>
+{% else %}
+	<li><strong>Download:</strong></li>
 	<li><a href="http://s3.abaines.me.uk/{{ page.repo }}-{{ page.version }}-linux-x86.tar.gz">Linux x86</a></li>
 	<li><a href="http://s3.abaines.me.uk/{{ page.repo }}-{{ page.version }}-linux-x64.tar.gz">Linux x64</a></li>
 	<li><a href="http://s3.abaines.me.uk/{{ page.repo }}-{{ page.version }}-windows-x86.zip">Windows x86</a></li>
 	<li><a href="/games/checksums.txt">Checksums</a></li>
 	<li><b><a href="https://www.github.com/baines/{{ page.repo }}">View source on GitHub!</a></b></li>
+{% endif %}
 </ul>
-
+{% endif %}
