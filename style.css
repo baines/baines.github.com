@@ -306,8 +306,8 @@ div#about {
 #webgame {
 	display: block;
 	margin: 2% 15% 5px 15%;
-	height: 360px;
-	max-height: 360px;
+	height: 420px;
+	max-height: 420px;
 }
 
 .web-game > li {
