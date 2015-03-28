@@ -4,7 +4,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Liberation Mono', Consolas, monospace;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
@@ -20,7 +20,7 @@ html, h2, h2 > a:link, .download, .download a:link, .date,
 
 body, header {
 	max-width: 970px;
-	min-width: 360px;
+	min-width: 310px;
 	border: 2px solid #fff;
 }
 
@@ -40,6 +40,11 @@ p {
 	word-break: break-word;
 	hyphens: auto;
 	-moz-hyphens: auto;
+}
+
+p img {
+	max-width: 100%;
+	height: auto;
 }
 
 ul {
@@ -109,12 +114,16 @@ nav {
 
 nav ul li {
 	display: inline-block;
-	min-width: 70px;
+	min-width: 60px;
 	width: 15%;
 	font-weight: bold;
 	margin: 0px -1px;
 	border-left: 2px solid #1B1825;
 	border-right: 2px solid #1B1825;
+}
+
+nav ul li a {
+	font-size: 85%;
 }
 
 article {
@@ -139,11 +148,11 @@ article {
 a.rss {
 	display: inline-block;
 	float: right;
-	width: 28px;
-	height: 28px;
-	background-color: transparent;
+	width: 24px;
+	padding-bottom: 24px;
+	background: transparent url('/img/feed-icon-28x28.png') no-repeat 0 0;
+	background-size: 100%;
 	color: #fff;
-	background-image: url('/img/feed-icon-28x28.png');
 }
 
 a.rss span {
@@ -166,20 +175,21 @@ a.rss span {
 
 .tiles {
 	display: block;
-	width: 15%;
+	width: 12%;
 	max-width: 112px;
+	min-width: 40px;
 	float: left;
-	margin-left: 4%;
+	margin-left: 3.5%;
 }
 
 .tiles > li {
-	display: block;
+	display: inline-block;
 	vertical-align: middle;
 	line-height: 100%;
 	max-width: 100px;
-	width: 100%;
+	width: 90%;
 	border: 6px double #1B1825;
-	margin: 25% 0;
+	margin: 25% -9px 10% -9px;
 	overflow: hidden;
 }
 
@@ -229,10 +239,15 @@ a.rss span {
 	line-height: 180%;
 }
 
+#contact > span > a {
+	font-size: 100%;
+}
+
 #contact > span:nth-of-type(odd) {
 	color: #fff;
 	background-color: #1B1825;
 }
+
 
 /* About stuff */
 
@@ -263,7 +278,8 @@ div#about {
 .game > a > span {
 	font-weight: bold;
 	font-size: 125%;
-	line-height: 250%;
+	vertical-align: baseline;
+	line-height: 200%;
 	margin-right: 3%;
 }
 
@@ -305,7 +321,7 @@ div#about {
 
 #webgame {
 	display: block;
-	margin: 2% 15% 5px 15%;
+	margin: 2% 10% 5px 10%;
 	height: 420px;
 	max-height: 420px;
 }
@@ -367,7 +383,11 @@ div#about {
 
 #posts.homepage {
 	display: inline-block;
-	width: 80%;
+	width: 82.5%;
+}
+
+#posts.homepage > li {
+	margin: 3% 2.5% 3% 2.75%;
 }
 
 #posts.homepage > h2 {
@@ -396,6 +416,12 @@ div#about {
 		margin-top: 50px;
 		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
+	}
+}
+
+@media screen and (min-width: 460px) {
+	* {
+		font-size: 14px;
 	}
 }
 
