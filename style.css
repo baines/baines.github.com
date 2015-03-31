@@ -321,10 +321,10 @@ div#about {
 
 .web-game > li {
 	display: inline-block;
-	width: 92.5%;
+	width: 85%;
 	max-width: 720px;
 	border: 6px double #fff;
-	margin: 2% 0 !important;
+	margin: 4% 0 !important;
 	text-align: center !important;
 }
 
