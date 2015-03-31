@@ -1,8 +1,9 @@
 .mobile-menu {
 	background-color: black;
 	font-family: "Courier New", Courier, monospace;
-	position: relative;
-	top: 4em;
+	position: fixed;
+	top: 1.8em;
+	left: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: bold;
@@ -35,7 +36,7 @@
 .mobile-menu,
 .tab-icon,
 .mobile-menu .close {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(70, 100, 100, 0.9);
 	border: 2px solid rgba(255, 255, 255, 0.4);
 	color: rgba(255, 255, 255, 1);
 }
@@ -52,16 +53,16 @@
 .close-affordance {
 	width: 6em;
 	height: 6em;
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 }
 .tab-affordance {
 	left: -2em;
-	top: 55px;
+	top: 0em;
 }
 .close-affordance {
 	left: -4em;
-	top: -1em;
+	top: 2em;
 }
 .tab-icon,
 .mobile-menu .close {
@@ -70,8 +71,9 @@
 	border-radius: 6px;
 }
 .tab-icon {
+	position: fixed;
 	left: -0.5em;
-	top: 70px;
+	top: 1em;
 	width: 18px;
 	border-radius: 0 6px 6px 0;
 	border-left: 0;
