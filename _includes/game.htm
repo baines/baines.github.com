@@ -1,18 +1,5 @@
 {% if page.webgame and INDEX == false %}
-	<span id="mobile-disclaimer">If you're on a mobile device, this embedded version might not work.
-	<a href=http://www.puzzlescript.net/play.html?p=eb71f0b81ecbaf600782>Go Here</a> instead
-	while I try to fix it.</span>
 	<div id="webgame"></div>
-	<!-- The embedded puzzlescript's resizing seems kinda broken,
-	     gotta use js for it :( -->
-	<script src="/lib/jquery-1.11.2.min.js"></script>
-	<script>
-		function scale_game(){
-			var div = $('#webgame');
-			div.height(div.width() * 0.625);
-		};
-		$(function(){ $(window).resize(scale_game); scale_game(); });
-	</script>
 	{% if page.webgame.lib  %}<script src="{{ page.webgame.lib }}"></script>{% endif %}
     {% if page.webgame.init %}<script>{{ page.webgame.init }}</script>{% endif %}
 	{% for l in page.webgame.links %}

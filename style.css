@@ -13,7 +13,7 @@ a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
 }
 
 html, h2, h2 > a:link, .download, .download a:link, .date, .post > a, #about > h1, 
-header > a:link, .web-game > li, .web-game > li > a:link, #mobile-disclaimer > a:link {
+header > a:link, .web-game > li, .web-game > li > a:link {
 	background-color: #1B1825;
 	color: #fff;
 }
@@ -129,17 +129,17 @@ nav ul li a {
 article {
 	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcAQMAAABIw03XAAAABlBMVEUbGCX///8LtO7KAAAAR0lEQVQIHQXBMRHAIBAAsHAMjFQBGioAUR0ZX9pLeQlIaCJ5FQ9cB+hpAZMRYNMKXBzoiQUTRmBDK1xw6AkWExhhA61cCL4fXe4PtaJLCEAAAAAASUVORK5CYII=") repeat;
 	border: 2px solid #fff;
-	min-height: 340px;
 	text-align: center;
 	line-height: 100%;
 }
 
 #ribbon a {
-	border: 6px double #1B1825;
+	border: 2px solid #1B1825;
 	display: block;
 	text-align: center;
 	font-weight: bold;
-	line-height: 150%;
+	font-size: 75%;
+	line-height: 120%;
 	padding-top: 2px;
 	text-decoration: none;
 	margin: -2px -2px 0px -2px;
@@ -320,17 +320,36 @@ div#about {
 }
 
 .web-game > li {
-	border: 6px double #fff;
+	display: inline-block;
+	width: 92.5%;
 	max-width: 720px;
-	margin: 2% auto !important;
-	text-align: center;
+	border: 6px double #fff;
+	margin: 2% 0 !important;
+	text-align: center !important;
 }
 
-.web-game > li > a, #mobile-disclaimer {
-	display: block;
+.web-game > li > a {
+	display: inline-block;
 	text-align: center;
 	font-size: 75%;
 	font-weight: bold;
+	padding-left: 8px;
+}
+
+.web-game > li > a:not(:first-of-type) {
+	border-left: 2px solid #fff;
+}
+
+.web-game > li > button {
+	width: 100px;
+}
+
+button#undo {
+	margin-right: 10%;
+}
+
+button#reset {
+	margin-left: 10%;
 }
 
 /* Other posts stuff */
@@ -409,6 +428,7 @@ div#about {
 	#ribbon a {
 		width: 220px;
 		margin-top: 50px;
+		border: 6px double #1B1825;
 		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
 	}

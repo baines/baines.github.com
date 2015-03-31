@@ -8,7 +8,9 @@ time: ~2 days
 repo: lawn-mowing-robot
 webgame: { lib:  "/lib/puzzlescript-embed.js",
            init: "PuzzleScript.embed(document.getElementById('webgame'), 'eb71f0b81ecbaf600782', { engine: '/lib/puzzlescript_play_compiled.js' });",
-           links: [{ text: "Edit the game on PuzzleScript.net",
+           links: [{ text: "Play on Puzzlescript.net",
+                     url:  "http://www.puzzlescript.net/play.html?p=eb71f0b81ecbaf600782" },
+                   { text: "Hack the game!",
                      url:  "http://www.puzzlescript.net/editor.html?hack=eb71f0b81ecbaf600782" }] }
 tags: web-game
 ---
