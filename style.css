@@ -12,8 +12,8 @@ a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
 	color: #1B1825;
 }
 
-html, h2, h2 > a:link, .download, .download a:link, .date, 
-.post > a, #about > h1, header > a:link, .web-game > li, .web-game > li > a:link {
+html, h2, h2 > a:link, .download, .download a:link, .date, .post > a, #about > h1, 
+header > a:link, .web-game > li, .web-game > li > a:link, #mobile-disclaimer > a:link {
 	background-color: #1B1825;
 	color: #fff;
 }
@@ -326,7 +326,7 @@ div#about {
 	text-align: center;
 }
 
-.web-game > li > a {
+.web-game > li > a, #mobile-disclaimer {
 	display: block;
 	text-align: center;
 	font-size: 75%;
