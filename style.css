@@ -340,16 +340,17 @@ div#about {
 	border-left: 2px solid #fff;
 }
 
-.web-game > li > button {
-	width: 100px;
+#webgame > canvas {
+	width: 100%;
+	height: 100%;
+}
+
+button#fullscreen {
+	margin: 0 10%;
 }
 
 button#undo {
-	margin-right: 10%;
-}
-
-button#reset {
-	margin-left: 10%;
+	width: 70px;
 }
 
 /* Other posts stuff */
