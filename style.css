@@ -263,7 +263,7 @@ a.rss span {
 	left: 2px;
 }
 
-#posts > li, div#about {
+#posts:not(.web-game) > li, div#about {
 	text-align: left;
 	margin: 3%;
 }
@@ -378,8 +378,8 @@ div#about {
 	display: inline-block;
 	width: 85%;
 	max-width: 720px;
+	margin: 2% auto;
 	border: 6px double #fff;
-	margin: 4% 0 !important;
 	text-align: center !important;
 }
 
