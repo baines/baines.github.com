@@ -248,6 +248,61 @@ a.rss span {
 	background-color: #1B1825;
 }
 
+/* generic posts stuff */
+
+.date {
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid #fff;
+	border-bottom: 2px dotted #fff;
+	width: 100px;
+	font-weight: bold;
+	position: relative;
+	top: 4px;
+	left: 2px;
+}
+
+#posts > li, div#about {
+	text-align: left;
+	margin: 3%;
+}
+
+.post {
+	display: block;
+	border: 6px double #1B1825;
+}
+
+.post > a, #about > h1 {
+	display: block;
+	color: #fff;
+	background-color: #1B1825;
+	font-size: 150%;
+	line-height: 120%;
+	font-weight: normal;
+	border-bottom: 6px double #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+.post > ul {
+	padding: 5px 20px;
+	line-height: 140%;
+	list-style-type: square;
+}
+
+#posts.homepage {
+	display: inline-block;
+	width: 82.5%;
+}
+
+#posts.homepage > li {
+	margin: 3% 2.5% 3% 2.75%;
+}
+
+#posts.homepage > h2 {
+	margin: 0 3% 3% 3%;
+}
 
 /* About stuff */
 
@@ -331,9 +386,9 @@ div#about {
 .web-game > li:-webkit-full-screen {
 	display: block;
 	max-width: 10000px;
-	width: 98%;
+	width: 99%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	padding: 0px;
 }
 
@@ -360,62 +415,6 @@ button#fullscreen {
 
 button#undo {
 	width: 70px;
-}
-
-/* Other posts stuff */
-
-.date {
-	display: block;
-	text-align: center;
-	padding: 5px;
-	border: 2px solid #fff;
-	border-bottom: 2px dotted #fff;
-	width: 100px;
-	font-weight: bold;
-	position: relative;
-	top: 4px;
-	left: 2px;
-}
-
-#posts > li, div#about {
-	text-align: left;
-	margin: 3%;
-}
-
-.post {
-	display: block;
-	border: 6px double #1B1825;
-}
-
-.post > a, #about > h1 {
-	display: block;
-	color: #fff;
-	background-color: #1B1825;
-	font-size: 150%;
-	line-height: 120%;
-	font-weight: normal;
-	border-bottom: 6px double #fff;
-	text-decoration: none;
-	padding: 5px 20px;
-}
-
-.post > ul {
-	padding: 5px 20px;
-	line-height: 140%;
-	list-style-type: square;
-}
-
-#posts.homepage {
-	display: inline-block;
-	width: 82.5%;
-}
-
-#posts.homepage > li {
-	margin: 3% 2.5% 3% 2.75%;
-}
-
-#posts.homepage > h2 {
-	margin: 0 3% 3% 3%;
 }
 
 /* Adjust the ribbon and stuff for small screens */
