@@ -328,6 +328,15 @@ div#about {
 	text-align: center !important;
 }
 
+.web-game > li:-webkit-full-screen {
+	display: block;
+	max-width: 10000px;
+	width: 98%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
 .web-game > li > a {
 	display: inline-block;
 	text-align: center;
