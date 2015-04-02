@@ -385,7 +385,7 @@ div#about {
 
 .web-game > li:-webkit-full-screen {
 	display: block;
-	max-width: 10000px;
+	max-width: none;
 	width: 99%;
 	height: 100%;
 	margin: 0 auto !important;
