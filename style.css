@@ -409,12 +409,16 @@ div#about {
 	height: 100%;
 }
 
+button#reset {
+	max-width: 50px;
+}
+
 button#fullscreen {
 	margin: 0 10%;
 }
 
 button#undo {
-	width: 70px;
+	width: 60px;
 }
 
 /* Adjust the ribbon and stuff for small screens */
