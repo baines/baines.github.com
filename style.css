@@ -13,7 +13,7 @@ a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
 }
 
 html, h2, h2 > a:link, .download, .download a:link, .date, .post > a, #about > h1, 
-header > a:link, .web-game > li, .web-game > li > a:link {
+header > a:link, .web-game > li, #webgame-links > a:link {
 	background-color: #1B1825;
 	color: #fff;
 }
@@ -392,7 +392,7 @@ div#about {
 	padding: 0px;
 }
 
-.web-game > li > a {
+#webgame-links > a {
 	display: inline-block;
 	text-align: center;
 	font-size: 75%;
@@ -400,7 +400,7 @@ div#about {
 	padding-left: 8px;
 }
 
-.web-game > li > a:not(:first-of-type) {
+#webgame-links > a:not(:first-of-type) {
 	border-left: 2px solid #fff;
 }
 
@@ -409,16 +409,34 @@ div#about {
 	height: 100%;
 }
 
-button#reset {
-	max-width: 50px;
+button {
+	border-radius: 0;
+	border: 3px double #1B1825;
+	background: #fff; 
+	color: #1B1825;
+	margin: 0px 1% 1% 1%;
+	cursor: pointer;
+	font-variant: small-caps;
+	font-weight: bold;
 }
 
-button#fullscreen {
-	margin: 0 10%;
+button:active {
+	background: #ccc;
+	text-shadow: -1px  0px 0px #fff, 1px 0px 0px #fff,
+	              0px -1px 0px #fff, 0px 1px 0px #fff;
 }
 
-button#undo {
-	width: 60px;
+button:focus {
+	outline: 0;
+}
+
+button::-moz-focus-inner {
+	border: 0px;
+}
+
+button#reset, button#fullscreen, button#undo {
+	min-width: 80px;
+	width: 27%;
 }
 
 /* Adjust the ribbon and stuff for small screens */
