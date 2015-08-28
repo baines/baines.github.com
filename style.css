@@ -12,7 +12,7 @@ a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
 	color: #1B1825;
 }
 
-html, h2, h2 > a:link, .download, .download a:link, .date, .post > a, #about > h1, 
+html, h2, h2 > a:link, .download, .download a:link, date, .post > a, #about > h1, 
 header > a:link, .web-game > li, #webgame-links > a:link {
 	background-color: #1B1825;
 	color: #fff;
@@ -126,7 +126,7 @@ nav ul li a {
 	font-size: 85%;
 }
 
-article {
+main {
 	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcAQMAAABIw03XAAAABlBMVEUbGCX///8LtO7KAAAAR0lEQVQIHQXBMRHAIBAAsHAMjFQBGioAUR0ZX9pLeQlIaCJ5FQ9cB+hpAZMRYNMKXBzoiQUTRmBDK1xw6AkWExhhA61cCL4fXe4PtaJLCEAAAAAASUVORK5CYII=") repeat;
 	border: 2px solid #fff;
 	text-align: center;
@@ -250,7 +250,7 @@ a.rss span {
 
 /* generic posts stuff */
 
-.date {
+date {
 	display: block;
 	text-align: center;
 	padding: 5px;
@@ -302,6 +302,21 @@ a.rss span {
 
 #posts.homepage > h2 {
 	margin: 0 3% 3% 3%;
+}
+
+figure {
+	margin: 2% auto;
+	text-align: center;
+	max-width: 250px;
+	width: 60%;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+code:not([class]) {
+	font-weight: bold;
 }
 
 /* About stuff */
@@ -439,7 +454,7 @@ button#reset, button#fullscreen, button#undo {
 	width: 27%;
 }
 
-/* Adjust the ribbon and stuff for small screens */
+/* Adjust the ribbon and stuff for bigger screens */
 
 @media screen and (min-width: 920px) {
 	html {
@@ -460,6 +475,7 @@ button#reset, button#fullscreen, button#undo {
 		width: 220px;
 		margin-top: 50px;
 		border: 6px double #1B1825;
+		font-size: 100%;
 		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
 	}
