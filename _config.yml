@@ -1,5 +1,5 @@
 permalink: /:categories/:title
 markdown: kramdown
 url: http://abaines.me.uk
-highlighter: rouge
+highlighter: pygments
 
