@@ -1,8 +1,9 @@
+<article>
 {% if page.webgame and INDEX == false %}
 	<div id="webgame"></div>
 	{% if page.webgame.lib  %}<script src="{{ page.webgame.lib }}"></script>{% endif %}
     {% if page.webgame.init %}<script>{{ page.webgame.init }}</script>{% endif %}
-</li><li style="margin-top: -20px">
+</article><article style="margin: -20px">
 	<div id="webgame-links">
 	{% for l in page.webgame.links %}
 		<a href="{{ l.url }}">{{ l.text }}</a>
@@ -10,10 +11,8 @@
 	</div>
 {% else %}
 <div class="{% cycle 'game','game alt' %}">
-	<a href="{{ page.url }}">
-		<img src="/img/{{ page.repo }}.png" alt="[Screenshot]"/>
-		<span>{{ page.title }}</span>
-	</a>
+	<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	<a href="{{ page.url }}"><img src="/img/{{ page.repo }}.png" alt="[Screenshot]"/></a>
 {{ CONTENT }}
 	<ul class="stats">
 		<li><abbr title="Programming language used">{{ page.lang }}</abbr></li>
@@ -35,3 +34,4 @@
 {% endif %}
 </ul>
 {% endif %}
+</article>

@@ -4,17 +4,15 @@ layout: main
 desc: The personal website of me, Alex Baines, cataloguing my programming projects like small C++ games. Check out my GitHub page or contact me here.
 ---
 <ul class="tiles">
-<li id="contact"><span>Contact</span><span>alex @ [This domain]</span><span>PGP</span><span><a href="/about/public-key.txt">AC38912D</a></span></li><li id="gh"><a href="https://github.com/baines" title="GitHub" alt="GitHub"></a></li>
+<li id="contact"><span>Contact</span><span>alex @ [This domain]</span><span>PGP</span><span><a href="/about/public-key.txt">AC38912D</a></span></li><li id="gh"><a href="https://github.com/baines" title="GitHub"></a></li>
 <li id="about"><a href="/about/" title="About">About<span></span></a></li>
 <li id="games"><a href="/games/" title="Games">Games<span></span></a></li>
 <li id="other"><a href="/other/" title="Other">Other<span></span></a></li>
 </ul>
-<ul id="posts" class="homepage">
+<section id="posts" class="homepage">
 {% for page in site.categories.updates limit:2 %}
-<li>
 {% assign CONTENT = page.content %}
 {% include {{page.template}} %}
-</li>
 {% endfor %}
-<h2><a href="/updates/">More Updates &gt;</a></h2>
-</ul>
+<h1><a href="/updates/">More Updates &gt;</a></h1>
+</section>

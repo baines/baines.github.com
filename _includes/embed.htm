@@ -1,6 +1,6 @@
-<date>{{ page.date | date: "%d-%b-%Y" }}</date>
-<article class="post">
-<a href="{{ page.url }}">{{ page.title }}</a>
+<time datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%d-%b-%Y" }}</time>
+<article>
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 {{ CONTENT }}
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ page.embedsrc }}"></iframe>
+<iframe style="width: 100%; height: 166px; overflow: hidden; border: 0;" src="{{ page.embedsrc }}"></iframe>
 </article>

@@ -1,6 +1,6 @@
-<date>{{ page.date | date: "%d-%b-%Y" }}</date>
-<article class="post">
-<a href="{{ page.url }}">{{ page.title }}</a>
+<time datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%d-%b-%Y" }}</time>
+<article>
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 {{ CONTENT }}
 {% if page.links %}
 	<ul class="download">

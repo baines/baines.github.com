@@ -7,13 +7,13 @@
 	font-size: 12px;
 }
 
-a:link, nav, #ribbon a, .tiles > li, #about, .post, .games > li {
+a:link, nav, #ribbon a, .tiles > li, article, .games > li {
 	background-color: #fff;
 	color: #1B1825;
 }
 
-html, h2, h2 > a:link, .download, .download a:link, date, .post > a, #about > h1, 
-header > a:link, .web-game > li, #webgame-links > a:link {
+html, h1, h1 > a:link, .download, .download a:link, time, article > h2, article > h2 > a:link,
+header > a:link, .web-game > article, #webgame-links > a:link {
 	background-color: #1B1825;
 	color: #fff;
 }
@@ -56,24 +56,25 @@ abbr {
 	border-bottom: 1px dotted #000;
 }
 
-h1 {
+h2 {
 	padding: 10px 0px;
 	text-decoration: underline;
 	font-size: 120%;
 	line-height: 120%;
 }
 
-h2 {
+h1 {
 	display: inline-block;
 	width: 80%;
-	max-width: 500px;
-	margin: 1% 3% -3% 3%;
-	padding: 4px 4px;
-	border: 6px double #fff;
+	max-width: 435px;
+	margin: -3% 3% 1% 3%;
+	padding: 4px;
+	border: 2px solid #fff;
 	text-decoration: none;
-	text-indent: 25px;
-	font-size: 125%;
-	line-height: 150%;
+	text-indent: 24px;
+	font-size: 16px;
+	line-height: 24px;
+	font-variant: small-caps;
 }
 
 header > a {
@@ -131,6 +132,7 @@ main {
 	border: 2px solid #fff;
 	text-align: center;
 	line-height: 100%;
+	/*padding-bottom: 3%;*/
 }
 
 #ribbon a {
@@ -250,7 +252,7 @@ a.rss span {
 
 /* generic posts stuff */
 
-date {
+time {
 	display: block;
 	text-align: center;
 	padding: 5px;
@@ -263,45 +265,51 @@ date {
 	left: 2px;
 }
 
-#posts:not(.web-game) > li, div#about {
-	text-align: left;
-	margin: 3%;
-}
-
-.post {
-	display: block;
-	border: 6px double #1B1825;
-}
-
-.post > a, #about > h1 {
-	display: block;
-	color: #fff;
-	background-color: #1B1825;
-	font-size: 150%;
-	line-height: 120%;
-	font-weight: normal;
-	border-bottom: 6px double #fff;
-	text-decoration: none;
-	padding: 5px 20px;
-}
-
-.post > ul {
-	padding: 5px 20px;
-	line-height: 140%;
-	list-style-type: square;
+#posts {
+	margin: 2.5% 3%;
 }
 
 #posts.homepage {
 	display: inline-block;
-	width: 82.5%;
+	width: 76.5%;
 }
 
-#posts.homepage > li {
-	margin: 3% 2.5% 3% 2.75%;
+#posts.homepage > h1 {
+	margin: -2%;
+	text-indent: 0px;
 }
 
-#posts.homepage > h2 {
-	margin: 0 3% 3% 3%;
+#posts.web-game {
+	margin-top: 0;
+}
+
+article {
+	display: block;
+	text-align: left;
+	border: 6px double #1B1825;
+	margin-bottom: 3%;
+}
+
+article > h2 {
+	display: block;
+	border-bottom: 6px double #fff;
+	padding: 7px 10px;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 120%;
+	line-height: 120%;
+}
+
+article > h2 > a, article > h2 > a:link {
+	text-decoration: none;
+	font-size: 120%;
+	line-height: 120%;
+}
+
+article > ul {
+	padding: 5px 20px;
+	line-height: 140%;
+	list-style-type: square;
 }
 
 figure {
@@ -319,12 +327,6 @@ code:not([class]) {
 	font-weight: bold;
 }
 
-/* About stuff */
-
-div#about {
-	border: 6px double #1B1825;
-}
-
 /* Games stuff */
 
 .game {
@@ -333,34 +335,23 @@ div#about {
 	min-height: 120px;
 }
 
-.games > li {
-	display: block;
-	border: 6px double #1B1825;
+.game > h2, .game > h2 > a {
+	display: inline;
+	font-size: 18px;
+	line-height: 200%;
 }
 
 .game > a > img {
 	float: left;
-	margin-right: 3%;
+	margin-right: 2%;
 	width: 40%;
 	max-width: 200px;
-}
-
-.game > a > span {
-	font-weight: bold;
-	font-size: 125%;
-	vertical-align: baseline;
-	line-height: 200%;
-	margin-right: 3%;
-}
-
-.game.alt > a > span {
-	margin-right: -1%;
 }
 
 .game.alt > a > img {
 	float: right;
 	margin-right: 0px;
-	margin-left: 3%;
+	margin-left: 2%;
 }
 
 .download {
@@ -389,7 +380,7 @@ div#about {
 	min-width: 80px;
 }
 
-.web-game > li {
+.web-game > article {
 	display: inline-block;
 	width: 85%;
 	max-width: 720px;
@@ -398,11 +389,11 @@ div#about {
 	text-align: center !important;
 }
 
-.web-game > li:-webkit-full-screen {
+.web-game > article:-webkit-full-screen {
 	display: block;
 	max-width: none;
-	width: 99%;
-	height: 100%;
+	width: calc(100% - 12px);
+	height: calc(100% - 12px);
 	margin: 0 auto !important;
 	padding: 0px;
 }
@@ -413,6 +404,7 @@ div#about {
 	font-size: 75%;
 	font-weight: bold;
 	padding-left: 8px;
+	margin: 5px 0;
 }
 
 #webgame-links > a:not(:first-of-type) {
