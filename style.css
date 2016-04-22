@@ -331,6 +331,10 @@ figure img {
 	height: auto;
 }
 
+figure.highlight {
+	text-align: left;
+}
+
 figcaption {
 	font-style: italic;
 	font-size: 80%;
