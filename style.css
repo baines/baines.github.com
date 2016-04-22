@@ -306,6 +306,15 @@ article > h2 > a, article > h2 > a:link {
 	line-height: 120%;
 }
 
+article > h3 {
+	font-size: 160%;
+	padding: 4px;
+	display: block;
+	border-bottom: 2px dotted #1B1825;
+	font-variant: small-caps;
+	margin: 15px;
+}
+
 article > ul {
 	padding: 5px 20px;
 	line-height: 140%;
@@ -313,14 +322,18 @@ article > ul {
 }
 
 figure {
-	margin: 2% auto;
+	margin: 20px auto;
 	text-align: center;
-	max-width: 250px;
-	width: 60%;
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
 }
 
 figcaption {
 	font-style: italic;
+	font-size: 80%;
 }
 
 code:not([class]) {

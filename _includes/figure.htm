@@ -1,4 +1,14 @@
+{% if include.link %}
+<figure>
+	<a href="{{include.link}}">
+	<img src="/img/{{include.file}}" alt="{{include.alt}}" title="{{include.desc}}">
+	</a>
+	<figcaption>{{include.desc}}</figcaption>
+</figure>
+{% else %}
 <figure>
 	<img src="/img/{{include.file}}" alt="{{include.alt}}" title="{{include.desc}}">
 	<figcaption>{{include.desc}}</figcaption>
 </figure>
+{% endif %}
+
