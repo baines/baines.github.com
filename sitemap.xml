@@ -17,22 +17,32 @@
 	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
 </url>
 <url>
-	<loc>http://abaines.me.uk/other/</loc>
+	<loc>http://abaines.me.uk/projects/</loc>
+	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+</url>
+<url>
+	<loc>http://abaines.me.uk/updates/</loc>
 	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
 </url>
 {% for p in site.categories.games %}
 <url>
 	<loc>{{ site.url }}{{ p.url }}</loc>
-	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+	<lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>
 	<image:image>
 		<image:loc>{{ site.url }}/img/{{ p.repo }}.png</image:loc>
 	</image:image>
 </url>
 {% endfor %}
-{% for p in site.categories.other %}
+{% for p in site.categories.projects %}
 <url>
 	<loc>{{ site.url }}{{ p.url }}</loc>
-	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+	<lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>
+</url>
+{% endfor %}
+{% for p in site.categories.updates %}
+<url>
+	<loc>{{ site.url }}{{ p.url }}</loc>
+	<lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>
 </url>
 {% endfor %}
 </urlset>

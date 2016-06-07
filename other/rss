@@ -1,7 +1,4 @@
 ---
-layout: rss
-title: Other Projects
-category: other
+layout: redir
+redir_to: /projects/rss
 ---
-This page lists other projects of mine (programming and otherwise) that don't 
-strictly belong in the games section, though several are related.
