@@ -1,7 +1,7 @@
 ---
 layout: templated
 template: game.htm
-title: "Vampshift: The Bloodening"
+title: "VampShift: The Bloodening"
 lang: "C & SDL"
 year: 2016
 time: 48 hours
@@ -14,4 +14,4 @@ links: [{ text: "HTML5/Emscripten Port", url: "/ld35" },
 This was my entry to the Ludum Dare 35 compo, based on the theme "shapeshift."
 It's a short 2D platformer where you can turn into a bat to fly, but only for a
 short time without picking up extra blood. Some people have said it's in the 
-"massocore" genre.
+"masocore" genre.

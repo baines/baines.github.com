@@ -19,7 +19,7 @@ You can [play the web version here](/ld35/), or see its
 which includes links to the downloadable version for Linux & Windows.
 
 I also live-streamed the development of the game on Twitch. The VoDs are
-available at [https://twitch.tv/insofaras/profile](https://twitch.tv/insofaras/profile).
+available at [https://twitch.tv/insofaras/profile](https://twitch.tv/insofaras/profile/highlights).
 
 You might be curious about the "insofaras" user name there. I originally picked
 that (rather pretentious :/) name on twitch intending it to just be a random
@@ -78,16 +78,17 @@ editor side of things, and is planning to add more advanced features that take
 advantage of the editor itself having an understanding of the programming
 languages in use.
 
-One if its defining features is its customisability implemented through
+One of its defining features is the customisation layer, implemented through
 loading a user-created DLL / shared-library. In contrast to the scripting
-languages often found in other editors, this allows extension of the editor with
-native code, which is sensible for its target audience of C programmers.
+languages often found in other editors, this approach allows extension of
+the editor with native compiled code, appropriate for its target audience of
+C programmers.
 
 Mr Handmade Hero himself — Casey Muratori — has already found the current alpha
 build good enough to replace Emacs; he recently switched to using 4coder
-on his Twitch streams which is, in the words of Allen Webster, awesome.
+on his Twitch streams. That is, in the words of Allen Webster, awesome.
 
-My involvement with 4coder has been mainly implementing the stubbed functions
+My involvement with 4coder has been mainly implementing the stubbed-out functions
 that were present in the Linux platform layer. This boils down to looking at
 how the windows side is doing things, and translating that into a POSIX and
 Linux approach.
