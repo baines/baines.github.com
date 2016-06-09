@@ -7,13 +7,27 @@
 	font-size: 12px;
 }
 
-a:link, nav, #ribbon a, .tiles > li, article, .games > li {
+a:link, a:visited, nav, #ribbon a, .tiles > li, article, .games > li {
 	background-color: #fff;
 	color: #1B1825;
 }
 
-html, h1, h1 > a:link, .download, .download a:link, time, article > h2, article > h2 > a:link,
-header > a:link, .web-game > article, #webgame-links > a:link {
+html,
+h1,
+h1 > a:link,
+h1 > a:visited,
+.download,
+.download a:link,
+.download a:visited,
+time,
+article > h2,
+article > h2 > a:link,
+article > h2 > a:visited,
+header > a:link,
+header > a:visited,
+.web-game > article,
+#webgame-links > a:link,
+#webgame-links > a:visited {
 	background-color: #1B1825;
 	color: #fff;
 }
