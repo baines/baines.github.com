@@ -345,8 +345,9 @@ figure img {
 	height: auto;
 }
 
-figure.highlight {
+figure.highlight, div.highlight {
 	text-align: left;
+	line-height: 125%;
 }
 
 figcaption {
@@ -356,10 +357,6 @@ figcaption {
 
 code:not([class]) {
 	font-weight: bold;
-}
-
-div.highlight {
-	line-height: 125%;
 }
 
 .gist .blob-wrapper.data {
