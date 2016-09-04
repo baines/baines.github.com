@@ -1,6 +1,14 @@
 ---
 title: Updates
-cat: updates
-layout: index
+layout: main
 desc: This page lists infrequent updates about new things that I've been working on.
 ---
+<section id="posts" class="updates">
+<h1>{{ page.title }}<a class="rss" href="./rss" title="RSS Feed"><span> RSS Feed </span></a></h1>
+{% for page in site.categories.updates %}
+	<div class="post-index-entry">
+	<time datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%d-%b-%Y" }}</time>
+	<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	</div>
+{% endfor %}
+</section>

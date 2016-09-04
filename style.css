@@ -70,7 +70,7 @@ abbr {
 	border-bottom: 1px dotted #000;
 }
 
-h2 {
+.game > h2 {
 	padding: 10px 0px;
 	text-decoration: underline;
 	font-size: 120%;
@@ -266,7 +266,7 @@ a.rss span {
 
 /* generic posts stuff */
 
-time {
+#posts > time {
 	display: block;
 	text-align: center;
 	padding: 5px;
@@ -345,11 +345,6 @@ figure img {
 	height: auto;
 }
 
-figure.highlight, div.highlight {
-	text-align: left;
-	line-height: 125%;
-}
-
 figcaption {
 	font-style: italic;
 	font-size: 80%;
@@ -362,6 +357,38 @@ code:not([class]) {
 .gist .blob-wrapper.data {
    max-height:300px;
    overflow:auto;
+}
+
+/* Updates stuff */
+
+div.post-index-entry {
+	height: 40px;
+	border: 2px solid #fff;
+	margin: 15px auto;
+	max-width: 700px;
+	background-color: #1B1825;
+	line-height: 40px;
+}
+
+div.post-index-entry time {
+	background-color: #fff;
+	color: #000;
+	display: block;
+	float: left;
+	height: 36px;
+	padding: 0 10px;
+	font-weight: bold;
+	border: 2px solid #1B1825;
+	border-right: 6px double #1B1825;
+}
+
+div.post-index-entry a {
+	font-size: 16px;
+	display: block;
+	height: 40px;
+	color: #fff;
+	background-color: #1B1825;
+	text-decoration: none;
 }
 
 /* Games stuff */
